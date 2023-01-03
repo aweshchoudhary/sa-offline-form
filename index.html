@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HEAD -->
+
+    <script type="text/javascript">
+      /** This section is only needed once per page if manually copying **/
+      if (typeof MauticSDKLoaded == "undefined") {
+        var MauticSDKLoaded = true;
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src =
+          "https://m4.stellaraesthetics.in/index.php/media/js/mautic-form.js?veb6cf2a1";
+        script.onload = function () {
+          MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = "https://m4.stellaraesthetics.in/index.php";
+        var MauticLang = {
+          submittingMessage: "Please wait...",
+        };
+      } else if (typeof MauticSDK != "undefined") {
+        MauticSDK.onLoad();
+      }
+    </script>
+    <script src="https://m4.stellaraesthetics.in/index.php/plugins/MauticInternationalPhoneInputBundle/Assets/lib/js/intlTelInput.min.js?veb6cf2a1"></script>
+    <script
+      async
+      defer
+      src="//m4.stellaraesthetics.in/country/code/generate/_conferenceexhibitionvisitorform"
+    ></script>
+
+    <!-- HEAD END -->
+    <title>Document</title>
+    <style type="text/css" scoped>
+      .mauticform-field-hidden {
+        display: none;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        outline: none;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      .mauticform-errormsg {
+        color: red;
+      }
+
+      :root {
+        --primary-color: #bf2070;
+        --third-color: #741e60;
+        --secondary-color: #481d57;
+      }
+
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .text-secondary {
+        color: var(--secondary-color);
+      }
+      .text-third {
+        color: var(--third-color);
+      }
+      .bg-primary {
+        background: var(--primary-color) !important;
+        background-color: var(--primary-color);
+      }
+      .bg-secondary {
+        background: var(--secondary-color) !important;
+      }
+      .bg-third {
+        background: var(--third-color) !important;
+      }
+
+      .btn:hover {
+        background: var(--secondary-color) !important;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <!- FORM START -->
+    <div
+      class="form-wrapper md:w-1/2 w-full border md:p-10 p-5 mx-auto md:my-10"
+    >
+      <div
+        id="mauticform_wrapper_conferenceexhibitionvisitorform"
+        class="mauticform_wrapper"
+      >
+        <div class="mb-10">
+          <div class="w-[30%]">
+            <img
+              src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
+              alt=""
+              class="w-full"
+            />
+          </div>
+        </div>
+        <form
+          autocomplete="false"
+          role="form"
+          method="post"
+          action="https://m4.stellaraesthetics.in/form/submit?formId=15"
+          id="mauticform_conferenceexhibitionvisitorform"
+          data-mautic-form="conferenceexhibitionvisitorform"
+          enctype="multipart/form-data"
+        >
+          <div
+            class="mauticform-error"
+            id="mauticform_conferenceexhibitionvisitorform_error"
+          ></div>
+          <div
+            class="mauticform-message"
+            id="mauticform_conferenceexhibitionvisitorform_message"
+          ></div>
+
+          <div class="mauticform-innerform">
+            <div
+              class="mauticform-page-wrapper mauticform-page-1"
+              data-mautic-form-page="1"
+            >
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_title"
+                data-validate="title"
+                data-validation-type="select"
+                class="mauticform-row mauticform-select mauticform-field-1 mauticform-required my-5"
+              >
+                <label
+                  id="mauticform_label_conferenceexhibitionvisitorform_title"
+                  for="mauticform_input_conferenceexhibitionvisitorform_title"
+                  class="mauticform-label mb-2 block"
+                  >Title*</label
+                >
+                <select
+                  id="mauticform_input_conferenceexhibitionvisitorform_title"
+                  name="mauticform[title]"
+                  value="Dr"
+                  class="mauticform-selectbox border p-3 w-full"
+                >
+                  <option value="Dr" selected>Dr</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                </select>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_full_name"
+                data-validate="full_name"
+                data-validation-type="text"
+                class="mauticform-row mauticform-text mauticform-field-2 mauticform-required my-5"
+              >
+                <label
+                  id="mauticform_label_conferenceexhibitionvisitorform_full_name"
+                  for="mauticform_input_conferenceexhibitionvisitorform_full_name"
+                  class="mauticform-label mb-2 block"
+                  >Full Name*</label
+                >
+                <input
+                  id="mauticform_input_conferenceexhibitionvisitorform_full_name"
+                  name="mauticform[full_name]"
+                  value=""
+                  placeholder="Full Name"
+                  class="mauticform-input border p-3 w-full"
+                  type="text"
+                />
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_your_gmail_address"
+                data-validate="your_gmail_address"
+                data-validation-type="email"
+                class="mauticform-row mauticform-email mauticform-field-3 mauticform-required my-5"
+              >
+                <label
+                  id="mauticform_label_conferenceexhibitionvisitorform_your_gmail_address"
+                  for="mauticform_input_conferenceexhibitionvisitorform_your_gmail_address"
+                  class="mauticform-label mb-2 block"
+                  >Email*</label
+                >
+                <input
+                  id="mauticform_input_conferenceexhibitionvisitorform_your_gmail_address"
+                  name="mauticform[your_gmail_address]"
+                  value=""
+                  placeholder="Enter Your Email"
+                  class="mauticform-input border p-3 w-full"
+                  type="email"
+                />
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_your_whatsapp_number"
+                data-validate="your_whatsapp_number"
+                data-validation-type="plugin.internationalphoneinput"
+                class="mauticform-row mauticform-text mauticform-field-4 mauticform-required my-5"
+              >
+                <label
+                  id="mauticform_label_conferenceexhibitionvisitorform_your_whatsapp_number"
+                  for="mauticform_input_conferenceexhibitionvisitorform_your_whatsapp_number"
+                  class="mauticform-label mb-2 block"
+                  >WhatsApp Number</label
+                >
+                <input
+                  data-field-alias="your_whatsapp_number"
+                  id="mauticform_input_conferenceexhibitionvisitorform_your_whatsapp_number"
+                  name="mauticform[your_whatsapp_number]"
+                  placeholder="Enter Whatsapp Number"
+                  class="mauticform-input border p-3 pl-5 w-full inttel_conferenceexhibitionvisitorform"
+                  type="text"
+                />
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+              <link
+                rel="stylesheet"
+                href="https://m4.stellaraesthetics.in/index.php/plugins/MauticInternationalPhoneInputBundle/Assets/lib/css/intlTelInput.min.css?veb6cf2a1"
+              />
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_practice_type"
+                data-validate="practice_type"
+                data-validation-type="radiogrp"
+                class="mauticform-row mauticform-radiogrp mauticform-field-5 mauticform-required my-5"
+              >
+                <label
+                  class="mauticform-label mb-2 block border-b pb-2"
+                  for="mauticform_radiogrp_radio_practice_type_PrivatePractice1"
+                  >Practice Type</label
+                >
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio p-10"
+                    id="mauticform_radiogrp_radio_practice_type_PrivatePractice0"
+                    type="radio"
+                    value="Private Practice"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_PrivatePractice0"
+                    for="mauticform_radiogrp_radio_practice_type_PrivatePractice0"
+                    class="mauticform-radiogrp-label ml-2"
+                    >Private Practice</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_PrivateConsultant1"
+                    type="radio"
+                    value="Private Consultant"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_PrivateConsultant1"
+                    for="mauticform_radiogrp_radio_practice_type_PrivateConsultant1"
+                    class="mauticform-radiogrp-label ml-2"
+                    >Private Consultant</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_HospitalAttachment2"
+                    type="radio"
+                    value="Hospital Attachment"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_HospitalAttachment2"
+                    for="mauticform_radiogrp_radio_practice_type_HospitalAttachment2"
+                    class="mauticform-radiogrp-label ml-2"
+                    >Hospital Attachment</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_CollegeAttachment3"
+                    type="radio"
+                    value="College Attachment"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_CollegeAttachment3"
+                    for="mauticform_radiogrp_radio_practice_type_CollegeAttachment3"
+                    class="mauticform-radiogrp-label ml-2"
+                    >College Attachment</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_Employed4"
+                    type="radio"
+                    value="Employed"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_Employed4"
+                    for="mauticform_radiogrp_radio_practice_type_Employed4"
+                    class="mauticform-radiogrp-label ml-2"
+                    >Employed</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_PGStudent5"
+                    type="radio"
+                    value="PG Student"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_PGStudent5"
+                    for="mauticform_radiogrp_radio_practice_type_PGStudent5"
+                    class="mauticform-radiogrp-label ml-2"
+                    >PG Student</label
+                  >
+                </div>
+                <div
+                  class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    name="mauticform[practice_type]"
+                    class="mauticform-radiogrp-radio"
+                    id="mauticform_radiogrp_radio_practice_type_UGStudent6"
+                    type="radio"
+                    value="UG Student"
+                  />
+                  <label
+                    id="mauticform_radiogrp_label_practice_type_UGStudent6"
+                    for="mauticform_radiogrp_radio_practice_type_UGStudent6"
+                    class="mauticform-radiogrp-label ml-2"
+                    >UG Student</label
+                  >
+                </div>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+            </div>
+
+            <div
+              id="mauticform_conferenceexhibitionvisitorform_next"
+              class="mauticform-row mauticform-pagebreak-wrapper mauticform-field-6"
+              data-mautic-form-pagebreak="1"
+              style="display: none"
+            >
+              <button
+                type="button"
+                id="mauticform_input_conferenceexhibitionvisitorform_next"
+                name="mauticform[next]"
+                value=""
+                class="btn btn-default mautic-pagebreak-back mauticform-pagebreak"
+                style="display: none"
+                data-mautic-form-pagebreak-button="prev"
+              ></button>
+              <button
+                type="button"
+                id="mauticform_input_conferenceexhibitionvisitorform_next"
+                name="mauticform[next]"
+                value=""
+                class="btn btn-default py-2 text-white transition px-10 text-lg bg-primary bg-h-secondary mautic-pagebreak-next mauticform-pagebreak"
+                data-mautic-form-pagebreak-button="next"
+              >
+                Next
+              </button>
+            </div>
+
+            <div
+              class="mauticform-page-wrapper mauticform-page-2"
+              data-mautic-form-page="2"
+            >
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_interested_in1"
+                data-validate="interested_in1"
+                data-validation-type="checkboxgrp"
+                class="mauticform-row mauticform-checkboxgrp mauticform-field-7 mauticform-required my-5"
+              >
+                <label
+                  class="mauticform-label mb-2 block text-lg"
+                  for="mauticform_checkboxgrp_checkbox_interested_in1_Education1"
+                  >I'm Interested in</label
+                >
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[interested_in1][]"
+                    id="mauticform_checkboxgrp_checkbox_interested_in1_Education0"
+                    type="checkbox"
+                    value="Education"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_interested_in1_Education0"
+                    for="mauticform_checkboxgrp_checkbox_interested_in1_Education0"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Education</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[interested_in1][]"
+                    id="mauticform_checkboxgrp_checkbox_interested_in1_ProffesionalBusinessAlliance1"
+                    type="checkbox"
+                    value="Proffesional / Business Alliance"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_interested_in1_ProffesionalBusinessAlliance1"
+                    for="mauticform_checkboxgrp_checkbox_interested_in1_ProffesionalBusinessAlliance1"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Proffesional / Business Alliance</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[interested_in1][]"
+                    id="mauticform_checkboxgrp_checkbox_interested_in1_ProductsandDevices2"
+                    type="checkbox"
+                    value="Products and Devices"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_interested_in1_ProductsandDevices2"
+                    for="mauticform_checkboxgrp_checkbox_interested_in1_ProductsandDevices2"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Products and Devices</label
+                  >
+                </div>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_courses1"
+                data-mautic-form-show-on="interested_in1:Education"
+                data-mautic-form-expr="in"
+                data-validate="courses1"
+                data-validation-type="checkboxgrp"
+                class="mauticform-row mauticform-checkboxgrp mauticform-field-7 mauticform-field-hidden mauticform-required my-5"
+              >
+                <label
+                  class="mauticform-label mb-2 block"
+                  for="mauticform_checkboxgrp_checkbox_courses1_InternationalFellowshipinClinicalCosmetology1"
+                  >Courses</label
+                >
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[courses1][]"
+                    id="mauticform_checkboxgrp_checkbox_courses1_InternationalFellowshipinClinicalCosmetology0"
+                    type="checkbox"
+                    value="International Fellowship in Clinical Cosmetology"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_courses1_InternationalFellowshipinClinicalCosmetology0"
+                    for="mauticform_checkboxgrp_checkbox_courses1_InternationalFellowshipinClinicalCosmetology0"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >International Fellowship in Clinical Cosmetology</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[courses1][]"
+                    id="mauticform_checkboxgrp_checkbox_courses1_InternationalFellowshipinTricology1"
+                    type="checkbox"
+                    value="International Fellowship in Tricology"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_courses1_InternationalFellowshipinTricology1"
+                    for="mauticform_checkboxgrp_checkbox_courses1_InternationalFellowshipinTricology1"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >International Fellowship in Tricology</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[courses1][]"
+                    id="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinFacialCosmetics2"
+                    type="checkbox"
+                    value="International Cerification in Facial Cosmetics"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_courses1_InternationalCerificationinFacialCosmetics2"
+                    for="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinFacialCosmetics2"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >International Cerification in Facial Cosmetics</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[courses1][]"
+                    id="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinHairRestoration3"
+                    type="checkbox"
+                    value="International Cerification in Hair Restoration"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_courses1_InternationalCerificationinHairRestoration3"
+                    for="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinHairRestoration3"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >International Cerification in Hair Restoration</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[courses1][]"
+                    id="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinMicroPigmentationMicroblading4"
+                    type="checkbox"
+                    value="International Cerification in MicroPigmentation &amp; Microblading"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_courses1_InternationalCerificationinMicroPigmentationMicroblading4"
+                    for="mauticform_checkboxgrp_checkbox_courses1_InternationalCerificationinMicroPigmentationMicroblading4"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >International Cerification in MicroPigmentation &amp;
+                    Microblading</label
+                  >
+                </div>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_alliance_for1"
+                data-mautic-form-show-on="interested_in1:Proffesional / Business Alliance"
+                data-mautic-form-expr="in"
+                data-validate="alliance_for1"
+                data-validation-type="checkboxgrp"
+                class="mauticform-row mauticform-checkboxgrp mauticform-field-7 mauticform-field-hidden mauticform-required my-5"
+              >
+                <label
+                  class="mauticform-label mb-2 block"
+                  for="mauticform_checkboxgrp_checkbox_alliance_for1_Franchise1"
+                  >Alliance For</label
+                >
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[alliance_for1][]"
+                    id="mauticform_checkboxgrp_checkbox_alliance_for1_Franchise0"
+                    type="checkbox"
+                    value="Franchise"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_alliance_for1_Franchise0"
+                    for="mauticform_checkboxgrp_checkbox_alliance_for1_Franchise0"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Franchise</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[alliance_for1][]"
+                    id="mauticform_checkboxgrp_checkbox_alliance_for1_ClinicalCollaboration1"
+                    type="checkbox"
+                    value="Clinical Collaboration"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_alliance_for1_ClinicalCollaboration1"
+                    for="mauticform_checkboxgrp_checkbox_alliance_for1_ClinicalCollaboration1"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Clinical Collaboration</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[alliance_for1][]"
+                    id="mauticform_checkboxgrp_checkbox_alliance_for1_TrainingCollaboration2"
+                    type="checkbox"
+                    value="Training Collaboration"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_alliance_for1_TrainingCollaboration2"
+                    for="mauticform_checkboxgrp_checkbox_alliance_for1_TrainingCollaboration2"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Training Collaboration</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[alliance_for1][]"
+                    id="mauticform_checkboxgrp_checkbox_alliance_for1_CMECDE3"
+                    type="checkbox"
+                    value="CME / CDE"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_alliance_for1_CMECDE3"
+                    for="mauticform_checkboxgrp_checkbox_alliance_for1_CMECDE3"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >CME / CDE</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[alliance_for1][]"
+                    id="mauticform_checkboxgrp_checkbox_alliance_for1_Other4"
+                    type="checkbox"
+                    value="Other"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_alliance_for1_Other4"
+                    for="mauticform_checkboxgrp_checkbox_alliance_for1_Other4"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Other</label
+                  >
+                </div>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_products__devices"
+                data-mautic-form-show-on="interested_in1:Products and Devices"
+                data-mautic-form-expr="in"
+                data-validate="products__devices"
+                data-validation-type="checkboxgrp"
+                class="mauticform-row mauticform-checkboxgrp mauticform-field-7 mauticform-field-hidden mauticform-required my-5"
+              >
+                <label
+                  class="mauticform-label mb-2 block"
+                  for="mauticform_checkboxgrp_checkbox_products__devices_ClinicalCosmeceuticals1"
+                  >Products &amp; Devices</label
+                >
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[products__devices][]"
+                    id="mauticform_checkboxgrp_checkbox_products__devices_ClinicalCosmeceuticals0"
+                    type="checkbox"
+                    value="Clinical Cosmeceuticals"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_products__devices_ClinicalCosmeceuticals0"
+                    for="mauticform_checkboxgrp_checkbox_products__devices_ClinicalCosmeceuticals0"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Clinical Cosmeceuticals</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[products__devices][]"
+                    id="mauticform_checkboxgrp_checkbox_products__devices_LASERsDevices1"
+                    type="checkbox"
+                    value="LASERs / Devices"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_products__devices_LASERsDevices1"
+                    for="mauticform_checkboxgrp_checkbox_products__devices_LASERsDevices1"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >LASERs / Devices</label
+                  >
+                </div>
+                <div
+                  class="mauticform-checkboxgrp-row p-2 hover:bg-gray-100 transition"
+                >
+                  <input
+                    class="mauticform-checkboxgrp-checkbox"
+                    name="mauticform[products__devices][]"
+                    id="mauticform_checkboxgrp_checkbox_products__devices_HomeCareProducts2"
+                    type="checkbox"
+                    value="Home Care Products"
+                  />
+                  <label
+                    id="mauticform_checkboxgrp_label_products__devices_HomeCareProducts2"
+                    for="mauticform_checkboxgrp_checkbox_products__devices_HomeCareProducts2"
+                    class="mauticform-checkboxgrp-label ml-2"
+                    >Home Care Products</label
+                  >
+                </div>
+                <span class="mauticform-errormsg" style="display: none"
+                  >This is required.</span
+                >
+              </div>
+
+              <div
+                id="mauticform_conferenceexhibitionvisitorform_submit"
+                class="mauticform-row mauticform-button-wrapper mauticform-field-8"
+              >
+                <button
+                  type="submit"
+                  name="mauticform[submit]"
+                  id="mauticform_input_conferenceexhibitionvisitorform_submit"
+                  value=""
+                  class="mauticform-button btn btn-default py-2 text-white transition px-10 text-lg bg-primary bg-h-secondary"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <input
+            type="hidden"
+            name="mauticform[formId]"
+            id="mauticform_conferenceexhibitionvisitorform_id"
+            value="15"
+          />
+          <input
+            type="hidden"
+            name="mauticform[return]"
+            id="mauticform_conferenceexhibitionvisitorform_return"
+            value=""
+          />
+          <input
+            type="hidden"
+            name="mauticform[formName]"
+            id="mauticform_conferenceexhibitionvisitorform_name"
+            value="conferenceexhibitionvisitorform"
+          />
+        </form>
+      </div>
+    </div>
+    <br class="md:block hidden" />
+
+    <!-- FORM END -->
+  </body>
+</html>
