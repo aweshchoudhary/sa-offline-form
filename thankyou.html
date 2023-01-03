@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <script>
-        function redirectToThankYouPage(){
-            
-        }
-    </script> -->
-
     <!-- HEAD END -->
     <title>Vistor Form | Stellar Aesthetics</title>
 
@@ -74,5 +68,23 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <h1 class="text-3xl" id="name"></h1>
+    </div>
+
+    <script>
+      let url_string = window.location.href;
+      console.log(window.location.href);
+      let url = new URL(url_string);
+      let nameText = url.searchParams.get("name");
+      // function redirectToThankYouPage(){
+
+      // }
+      const name = document.getElementById("name");
+      name.innerText = `${
+        nameText ? nameText + "," : ""
+      } Thank You For Submitting Form`;
+    </script>
+  </body>
 </html>

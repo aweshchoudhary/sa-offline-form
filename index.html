@@ -28,7 +28,13 @@
       }
     </script>
     <script>
-      function redirectToThankYouPage() {}
+      function redirectToThankYouPage() {
+        let name = document.getElementById(
+          "mauticform_input_conferenceexhibitionvisitorform_full_name"
+        );
+        const HOST = "http://localhost:5500";
+        window.open(HOST + `/thankyou.html?name=${name.value}`, "_self");
+      }
     </script>
     <script src="https://m4.stellaraesthetics.in/index.php/plugins/MauticInternationalPhoneInputBundle/Assets/lib/js/intlTelInput.min.js?veb6cf2a1"></script>
     <script
@@ -781,6 +787,7 @@
                 class="mauticform-row mauticform-button-wrapper mauticform-field-8"
               >
                 <button
+                  onclick="redirectToThankYouPage()"
                   type="submit"
                   name="mauticform[submit]"
                   id="mauticform_input_conferenceexhibitionvisitorform_submit"
