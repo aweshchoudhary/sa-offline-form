@@ -111,7 +111,7 @@
         id="mauticform_wrapper_conferenceexhibitionvisitorform"
         class="mauticform_wrapper"
       >
-        <div class="mb-10">
+        <div class="mb-10 border-b pb-5">
           <div class="w-[30%]">
             <img
               src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
@@ -143,56 +143,58 @@
               class="mauticform-page-wrapper mauticform-page-1"
               data-mautic-form-page="1"
             >
-              <div
-                id="mauticform_conferenceexhibitionvisitorform_title"
-                data-validate="title"
-                data-validation-type="select"
-                class="mauticform-row mauticform-select mauticform-field-1 mauticform-required my-5"
-              >
-                <label
-                  id="mauticform_label_conferenceexhibitionvisitorform_title"
-                  for="mauticform_input_conferenceexhibitionvisitorform_title"
-                  class="mauticform-label mb-2 block"
-                  >Title*</label
+              <div class="flex my-5 gap-2">
+                <div
+                  id="mauticform_conferenceexhibitionvisitorform_title"
+                  data-validate="title"
+                  data-validation-type="select"
+                  class="mauticform-row mauticform-select mauticform-field-1 mauticform-required w-[30%]"
                 >
-                <select
-                  id="mauticform_input_conferenceexhibitionvisitorform_title"
-                  name="mauticform[title]"
-                  value="Dr"
-                  class="mauticform-selectbox border p-3 w-full"
-                >
-                  <option value="Dr" selected>Dr</option>
-                  <option value="Mr">Mr</option>
-                  <option value="Mrs">Mrs</option>
-                </select>
-                <span class="mauticform-errormsg" style="display: none"
-                  >This is required.</span
-                >
-              </div>
+                  <label
+                    id="mauticform_label_conferenceexhibitionvisitorform_title"
+                    for="mauticform_input_conferenceexhibitionvisitorform_title"
+                    class="mauticform-label mb-2 block"
+                    >Title*</label
+                  >
+                  <select
+                    id="mauticform_input_conferenceexhibitionvisitorform_title"
+                    name="mauticform[title]"
+                    value="Dr"
+                    class="mauticform-selectbox border p-3 w-full"
+                  >
+                    <option value="Dr" selected>Dr</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                  </select>
+                  <span class="mauticform-errormsg" style="display: none"
+                    >This is required.</span
+                  >
+                </div>
 
-              <div
-                id="mauticform_conferenceexhibitionvisitorform_full_name"
-                data-validate="full_name"
-                data-validation-type="text"
-                class="mauticform-row mauticform-text mauticform-field-2 mauticform-required my-5"
-              >
-                <label
-                  id="mauticform_label_conferenceexhibitionvisitorform_full_name"
-                  for="mauticform_input_conferenceexhibitionvisitorform_full_name"
-                  class="mauticform-label mb-2 block"
-                  >Full Name*</label
+                <div
+                  id="mauticform_conferenceexhibitionvisitorform_full_name"
+                  data-validate="full_name"
+                  data-validation-type="text"
+                  class="mauticform-row mauticform-text mauticform-field-2 mauticform-required w-[70%]"
                 >
-                <input
-                  id="mauticform_input_conferenceexhibitionvisitorform_full_name"
-                  name="mauticform[full_name]"
-                  value=""
-                  placeholder="Full Name"
-                  class="mauticform-input border p-3 w-full"
-                  type="text"
-                />
-                <span class="mauticform-errormsg" style="display: none"
-                  >This is required.</span
-                >
+                  <label
+                    id="mauticform_label_conferenceexhibitionvisitorform_full_name"
+                    for="mauticform_input_conferenceexhibitionvisitorform_full_name"
+                    class="mauticform-label mb-2 block"
+                    >Full Name*</label
+                  >
+                  <input
+                    id="mauticform_input_conferenceexhibitionvisitorform_full_name"
+                    name="mauticform[full_name]"
+                    value=""
+                    placeholder="Full Name"
+                    class="mauticform-input border p-3 w-full"
+                    type="text"
+                  />
+                  <span class="mauticform-errormsg" style="display: none"
+                    >This is required.</span
+                  >
+                </div>
               </div>
 
               <div
@@ -230,7 +232,7 @@
                   id="mauticform_label_conferenceexhibitionvisitorform_your_whatsapp_number"
                   for="mauticform_input_conferenceexhibitionvisitorform_your_whatsapp_number"
                   class="mauticform-label mb-2 block"
-                  >WhatsApp Number</label
+                  >WhatsApp Number*</label
                 >
                 <input
                   data-field-alias="your_whatsapp_number"
@@ -258,7 +260,7 @@
                 <label
                   class="mauticform-label mb-2 block border-b pb-2"
                   for="mauticform_radiogrp_radio_practice_type_PrivatePractice1"
-                  >Practice Type</label
+                  >Practice Type*</label
                 >
                 <div
                   class="mauticform-radiogrp-row p-2 hover:bg-gray-100 transition"
