@@ -7,7 +7,6 @@
 
     <!-- HEAD END -->
     <title>Vistor Form | Stellar Aesthetics</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
@@ -22,6 +21,8 @@
         height: 100vh;
         width: 100vw;
         overflow-x: hidden;
+        display: grid;
+        place-items: center;
       }
       .mauticform-errormsg {
         color: red;
@@ -67,24 +68,46 @@
         -moz-appearance: textfield;
       }
     </style>
+    <script>
+      const BASE_URL = "http://localhost:5500";
+      function updated() {
+        var count = document.getElementById("counter");
+        count.innerHTML = --upto;
+        if (upto === 0) {
+          window.open(BASE_URL + "/", "_self");
+          clearInterval(counts);
+        }
+      }
+    </script>
   </head>
   <body>
-    <div>
-      <h1 class="text-3xl" id="name"></h1>
+    <div class="md:w-1/2 text-center mx-2 md:p-10 p-5 bg-white border">
+      <h1
+        class="md:text-4xl text-2xl font-semibold text-primary"
+        id="name"
+      ></h1>
+      <h2 class="md:text-xl md:mt-5 mt-3">
+        Redirect Back To Form In
+        <span id="counter" class="font-medium"></span> Seconds
+      </h2>
+      <a
+        href="/"
+        class="block mt-4 px-5 py-3 bg-primary text-white bg-h-secondary transition btn"
+        >Back To Form</a
+      >
     </div>
 
     <script>
       let url_string = window.location.href;
-      console.log(window.location.href);
       let url = new URL(url_string);
       let nameText = url.searchParams.get("name");
-      // function redirectToThankYouPage(){
-
-      // }
       const name = document.getElementById("name");
       name.innerText = `${
         nameText ? nameText + "," : ""
       } Thank You For Submitting Form`;
+
+      let counts = setInterval(updated, 1000);
+      let upto = 6;
     </script>
   </body>
 </html>
